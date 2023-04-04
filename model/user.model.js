@@ -34,12 +34,6 @@ const userSchema = new mongoose.Schema({
     languages: {
         type: []
     },
-    following: {
-        type: [mongoose.Types.ObjectId]
-    },
-    followers: {
-        type: [mongoose.Types.ObjectId]
-    },
     password: {
         type: String,
         default: ''
