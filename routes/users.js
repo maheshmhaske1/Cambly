@@ -17,8 +17,8 @@ router.post('/reset-password', userController.resetPassword)
 
 router.post('/education/add',userEducation.add)
 router.get('/education/get/:userId',userEducation.getAll)
-router.post('/education/getById/:id',userEducation.get)
-router.post('/education/update/:id',userEducation.update)
-router.post('/education/delete/:id',userEducation.delete)
+router.get('/education/getById/:id',userEducation.get)
+router.put('/education/update/:id',userEducation.update)
+router.delete('/education/delete/:id',userEducation.delete)
 
 module.exports = router;
